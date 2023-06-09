@@ -1,6 +1,6 @@
 $(document).ready
 
-$("#search-form").on("click", function(event) {
+/* $("#search-form").on("click", function(event) {
     event.preventDefault();
     var APIKey= "f0ab02ded0ba640d09dd11e67827336a";
     var queryURL= "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid" + APIKey;
@@ -12,16 +12,14 @@ $("#search-form").on("click", function(event) {
         console.log(queryURL);
         console.log(response);
     }) 
-})
-    
+}) */
 
 
-
-//search history buttons
 var searchbuttonaEl = $("#search-button");
 var searchInputEl = $("#search-input");
 var historyEl = $("#history");
 var searchFormEl = $("#search-form");
+
 
 searchFormEl.on("submit", function (event) {
     event.preventDefault();
@@ -36,6 +34,7 @@ searchFormEl.on("submit", function (event) {
     }
 
 });
+
 function displayHistoryButtons() {
     historyEl.empty();
 
@@ -51,5 +50,7 @@ function displayHistoryButtons() {
         historyEl.append(buttonHTML);
     }
 }
+
+
 
 displayHistoryButtons()
