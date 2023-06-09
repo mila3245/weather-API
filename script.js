@@ -9,12 +9,11 @@ var queryURL= "https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={l
     console.log(response);
 }) */
 
-
+//search history buttons
 var searchbuttonaEl = $("#search-button");
 var searchInputEl = $("#search-input");
 var historyEl = $("#history");
 var searchFormEl = $("#search-form");
-
 
 searchFormEl.on("submit", function (event) {
     event.preventDefault();
@@ -29,7 +28,6 @@ searchFormEl.on("submit", function (event) {
     }
 
 });
-
 function displayHistoryButtons() {
     historyEl.empty();
 
@@ -45,7 +43,5 @@ function displayHistoryButtons() {
         historyEl.append(buttonHTML);
     }
 }
-
-
 
 displayHistoryButtons()
