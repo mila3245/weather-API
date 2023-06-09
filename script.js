@@ -2,7 +2,7 @@ $(document).ready
 
 $("#search-form").on("click", function(event) {
     event.preventDefault();
-    var APIKey= "c9cb15b4beb7e2eed4a1b78777b577d7";
+    var APIKey= "f0ab02ded0ba640d09dd11e67827336a";
     var queryURL= "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid" + APIKey;
 
     $.ajax ({
