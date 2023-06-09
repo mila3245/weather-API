@@ -15,7 +15,19 @@
   <header class="container-fluid text-center text-white bg-dark p-2 weather-header">
     <h1>Weather Dashboard</h1>
   </header>
-
+  <h2 class="header-component" style="text-align: center; width: 55%; margin: 5px auto 10px;"> <span id='date-time'></h2>
+    <nav class="nav-component navbar temp">
+      <a class=" nav-component__anchor navbar-brand" href="#">
+        <div class="nav-component__celcius-block col-auto">
+          <input type="checkbox" id="unit" class="checkbox">
+              <label for="checkbox" class="label">
+              <span class="farenheit">F°</span>
+              <span class="celcius">C°</span>         
+              <div class='ball'>
+          </label>
+        </div>
+      </a>
+    </nav>
   <!-- max-width for ultra wide resolutions -->
   <div class="container-fluid" style="max-width: 1400px">
     <div class="row">
