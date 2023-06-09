@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    
 };
 body {
     justify-content: center;
@@ -8,14 +9,6 @@ body {
     height: 90vh;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #222;
-    background-image: url('https://source.unsplash.com/1600x900/?landscape');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    overflow-y: scroll;
-    z-index: -1;
 }
 
 @media screen and (max-width: 480px) {

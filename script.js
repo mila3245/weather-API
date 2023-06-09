@@ -1,15 +1,21 @@
 $(document).ready
 
-var APIKey= "c9cb15b4beb7e2eed4a1b78777b577d7";
-var queryURL= "https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}" + APIKey;
+$("#search-form").on("click", function(event) {
+    event.preventDefault();
+    var APIKey= "c9cb15b4beb7e2eed4a1b78777b577d7";
+    var queryURL= "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid" + APIKey;
 
-/* $.ajax ({
-    url:queryURL,
-    method:"GET"
-}).then(function(response) {
-    console.log(queryURL);
-    console.log(response);
-}) */
+    $.ajax ({
+        url:queryURL,
+        method:"GET"
+    }).then(function(response) {
+        console.log(queryURL);
+        console.log(response);
+    }) 
+})
+    
+
+
 
 //search history buttons
 var searchbuttonaEl = $("#search-button");
